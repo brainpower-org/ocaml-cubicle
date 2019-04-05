@@ -21,6 +21,5 @@ ENV LC_ALL=en_US.UTF-8
 RUN sudo apt-get update
 RUN sudo apt-get install fswatch m4 -y
 
-RUN opam install OUnit Core dune utop -y
-RUN opam install merlin -y
+RUN opam install OUnit Core dune utop merlin -y
 
