@@ -46,3 +46,5 @@ RUN cat /home/opam/.code-server/extensions/ms-vsliveshare.vsliveshare-1.0.91/out
 
 RUN sed 's/libssl1.0.0/libssl1.1/g'  /home/opam/.code-server/extensions/ms-vsliveshare.vsliveshare-1.0.91/out/deps/linux-prereqs.sh > linux-prereqs.sh
 RUN sudo /bin/bash linux-prereqs.sh
+
+RUN . /home/opam/.opam/opam-init/init.sh
