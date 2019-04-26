@@ -48,3 +48,5 @@ RUN sed 's/libssl1.0.0/libssl1.1/g'  /home/opam/.code-server/extensions/ms-vsliv
 RUN sudo /bin/bash linux-prereqs.sh
 
 RUN . /home/opam/.opam/opam-init/init.sh
+
+RUN opam install ocp-indent
