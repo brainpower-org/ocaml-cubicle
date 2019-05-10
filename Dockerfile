@@ -16,6 +16,7 @@ RUN opam switch create 4.07.1
 RUN opam install dune ocp-indent utop earlybird -y
 
 RUN ext install hackwaly.ocaml-debugger
+RUN opam install user-setup -y
 
 ENV OPAM_SWITCH_PREFIX='/root/.opam/4.07.1'
 ENV CAML_LD_LIBRARY_PATH='/root/.opam/4.07.1/lib/stublibs:/root/.opam/4.07.1/lib/ocaml/stublibs:/root/.opam/4.07.1/lib/ocaml'
